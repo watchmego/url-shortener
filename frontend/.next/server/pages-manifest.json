@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/[id]": "pages/[id].html",
+  "/analytics/[id]": "pages/analytics/[id].html",
+  "/analytics": "pages/analytics.html",
+  "/": "pages/index.html",
+  "/internal-error": "pages/internal-error.html",
+  "/not-found": "pages/not-found.html",
+  "/url/[id]": "pages/url/[id].html",
+  "/api/[...path]": "pages/api/[...path].js",
+  "/404": "pages/404.html"
+}
