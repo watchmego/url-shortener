@@ -24,18 +24,14 @@ app.get('/url/:id', async (req, res) => {
 app.post('/url', async (req, res) => {
     const checkDupes = await findOne("origURL", req.body.url);
     if(checkDupes) {
-        
-        res.status(200).send({id: checkDupes.shortURL, originalURL: checkDupes.origURL, visitCount: checkDupes.count})
+        const record = {id: checkDupes.shortURL, originalURL: checkDupes.origURL, visitCount: checkDupes.count};
+        res.status(200).send(record);
     } else {
         const string = generateString();
-        const result = Promise.resolve(insertOne({shortURL: string, origURL: req.body.url, count: 0}))
-        result.then(value => {
-            console.log('value',value);
-            if(value.acknowledged === true) {
-                
-                res.status(201).send({ "id": string, "originalURL": req.body.url, "visitCount": 0})
-            }
-        });
+        const result = await insertOne({shortURL: string, origURL: req.body.url, count: 0});
+        if(result.acknowledged === true) {
+            res.status(201).send({ "id": string, "originalURL": req.body.url, "visitCount": 0})
+        }
     }
 })
 
