@@ -1,6 +1,6 @@
 {
-  "scripts": {
-    "frontend": "cd frontend && PORT=3000 node server.js",
-    "backend": "echo \"Error: No backend start command specified\" && exit 1"
+    "scripts": {
+      "frontend": "cd frontend && PORT=3000 node server.js",
+      "backend": "cd backend && node index.js"
+    }
   }
-}
