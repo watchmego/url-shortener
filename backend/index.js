@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 const app = express();
 const port = 8000;
-import { urls, store } from './utils/urlStore.js'
 import { generateString } from './utils/urlBuilder.js';
 import { insertOne, findOne, findOneAndUpdate } from './utils/db/queries.js';
 
