@@ -6,7 +6,6 @@
 
 # dependencies
 openapi.yaml
-/frontend/node_modules
 /.pnp
 .pnp.js
 

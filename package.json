@@ -2,5 +2,8 @@
     "scripts": {
       "frontend": "cd frontend && PORT=3000 node server.js",
       "backend": "cd backend && node index.js"
-    }
+    },
+    "dependencies": {
+      "prettier": "^2.8.4"
+  }
   }
