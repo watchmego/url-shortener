@@ -1,7 +1,6 @@
 import { ObjectId } from "mongodb";
 import "dotenv/config";
 
-
 export const insertURL = async (collection, record) => {
   let result;
   try {
@@ -21,7 +20,7 @@ export const insertURL = async (collection, record) => {
 
 export const findURL = async (collection, key, value) => {
   let result;
- 
+
   try {
     let query = { [key]: value };
     result = await collection.findOne(query);
