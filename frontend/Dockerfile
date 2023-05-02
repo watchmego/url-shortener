@@ -10,5 +10,5 @@ COPY . .
 EXPOSE 80
 EXPOSE 443
 
-
+ENTRYPOINT ["/bin/bash", "-l", "-c"]
 CMD [ "/bin/bash", "node", "server.js"]
