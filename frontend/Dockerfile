@@ -11,4 +11,4 @@ EXPOSE 80
 EXPOSE 443
 
 
-CMD [ "node", "server.js"]
+CMD [ "/bin/bash", "node", "server.js"]
