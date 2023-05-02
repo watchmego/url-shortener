@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: external "http"
-const external_http_namespaceObject = require("https");
+const external_http_namespaceObject = require("http");
 var external_http_default = /*#__PURE__*/__webpack_require__.n(external_http_namespaceObject);
 ;// CONCATENATED MODULE: external "http-proxy"
 const external_http_proxy_namespaceObject = require("http-proxy");
